@@ -12,6 +12,7 @@
 * The player can choose to ``HOLD``, which means that his ``CURRENT ROUND SCORE`` gets added to his GLBAL score
 * And after that, it's the next player's turn again
 * The player who reach ``100`` points first on ``GLOBAL SCORE`` wins the game
+* You can add player's name just by clicking on player name shown in UI
 
 > working of game
 
