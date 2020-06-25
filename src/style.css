@@ -19,7 +19,7 @@ body {
     background-color: #1D976C; 
     background-color: -webkit-linear-gradient(to right, #93F9B9, #1D976C); 
     background-color: linear-gradient(to right, #93F9B9, #1D976C);
-    background-image: url(../imgs/02.jpg);
+    background-image: url(../imgs/23762.jpg);
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -76,8 +76,9 @@ body {
 }
 
 .inactive { 
+    transition-duration: 0.5s; 
     filter: blur(3px);
-    background-color: #0F2027; 
+    background-color: #f2f2f2;
 }
 
 /* .active .player-name::after {
@@ -149,34 +150,31 @@ i {
 /* making button move on inactive players */
 .btn-new { 
     top: 225px;
-    color: #fff;
-}
-.btn-new-1 { 
+    color: #0F2027;
     margin-left: 250px;
 }
-.btn-new-0 { 
+
+.btn-new-toggle { 
     margin-left: -250px;
 }
 
 .btn-roll { 
     top: 275px;
-    color: #fff;
-}
-.btn-roll-1 {
+    color: #0F2027;
     margin-left: 227px;
 }
-.btn-roll-0 {
+
+.btn-roll-toggle {
     margin-left: -274px;
 }
 
 .btn-hold { 
     top: 325px;
-    color: #fff;
-}
-.btn-hold-1 {
+    color: #0F2027;
     margin-left: 210px;
 }
-.btn-hold-0 {
+
+.btn-hold-toggle {
     margin-left: -291px;
 }
 
@@ -187,11 +185,10 @@ i {
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
-}
-.dice-1 {
     margin-left: 255px;
 }
-.dice-0 {
+
+.dice-toggle {
     margin-left: -255px;
 }
 /* making button move on inactive players ends */
