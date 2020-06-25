@@ -32,31 +32,27 @@ function restart () {
     /*
     whenever game restart set everything to start
     */
-    var query = prompt('Are you sure? wanna restart game! enter yes/no')
-    if (query == 'yes') {
-        game_status = true;
-        scores = [0, 0];
-        round_score = 0;
-        player_name = ['', ''];
-        active_player = 0;
-        document.querySelector('.dice').style.display = 'none';
-        document.getElementById('score-0').textContent = 0;
-        document.getElementById('score-1').textContent = 0;
-        document.getElementById('current-0').textContent = 0;
-        document.getElementById('current-1').textContent = 0;
-        document.getElementById('name-0').textContent = 'player 1';
-        document.getElementById('name-1').textContent = 'player 2';
-        document.querySelector('.player-0-panel').classList.remove('winner');
-        document.querySelector('.player-1-panel').classList.remove('winner');
-        document.querySelector('.player-0-panel').classList.remove('inactive');
-        document.querySelector('.player-1-panel').classList.remove('inactive');
-        document.querySelector('.player-1-panel').classList.add('inactive');
-        document.querySelector('.btn-new').classList.remove('btn-new-toggle');
-        document.querySelector('.btn-roll').classList.remove('btn-roll-toggle');
-        document.querySelector('.btn-hold').classList.remove('btn-hold-toggle');
-        document.querySelector('.dice').classList.remove('dice-toggle');
-
-    }
+    game_status = true;
+    scores = [0, 0];
+    round_score = 0;
+    player_name = ['', ''];
+    active_player = 0;
+    document.querySelector('.dice').style.display = 'none';
+    document.getElementById('score-0').textContent = 0;
+    document.getElementById('score-1').textContent = 0;
+    document.getElementById('current-0').textContent = 0;
+    document.getElementById('current-1').textContent = 0;
+    document.getElementById('name-0').textContent = 'player 1';
+    document.getElementById('name-1').textContent = 'player 2';
+    document.querySelector('.player-0-panel').classList.remove('winner');
+    document.querySelector('.player-1-panel').classList.remove('winner');
+    document.querySelector('.player-0-panel').classList.remove('inactive');
+    document.querySelector('.player-1-panel').classList.remove('inactive');
+    document.querySelector('.player-1-panel').classList.add('inactive');
+    document.querySelector('.btn-new').classList.remove('btn-new-toggle');
+    document.querySelector('.btn-roll').classList.remove('btn-roll-toggle');
+    document.querySelector('.btn-hold').classList.remove('btn-hold-toggle');
+    document.querySelector('.dice').classList.remove('dice-toggle');
 }
 
 document.querySelector('.btn-new').addEventListener('click', restart);
